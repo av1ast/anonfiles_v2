@@ -72,11 +72,9 @@
 </ul>
 
 <h2>🎥 Demo</h2>
-<p>Add a link to a live demo or include screenshots to showcase the application.</p>
 
 <div>
-  <img src="assets/upload_screenshot.png" alt="Upload Screenshot" width="600"/>
-  <img src="assets/download_screenshot.png" alt="Download Screenshot" width="600"/>
+  <img src="https://i.ibb.co/c3Rr7Yw/image.png" alt="Upload Screenshot" width="600"/>
 </div>
 
 <h2>🚀 Getting Started</h2>
