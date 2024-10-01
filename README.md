@@ -251,11 +251,5 @@ cd anonfiles_v2</code></pre>
 <h2>📄 License</h2>
 <p>This project is licensed under the <a href="LICENSE">MIT License</a>. You are free to use, modify, and distribute this project as per the terms of the license.</p>
 
-<h2>📞 Contact</h2>
-<p>For any questions, suggestions, or support, please contact:</p>
-<ul>
-  <li><strong>Name:</strong> Your Name</li>
-  <li><strong>Email:</strong> your_email@example.com</li>
-  <li><strong>GitHub:</strong> <a href="https://github.com/av1ast">av1ast</a></li>
-</ul>
+
 <p><em>Feel free to reach out for collaborations or any inquiries related to the project.</em></p>
