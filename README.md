@@ -1,226 +1,87 @@
-AnonFiles v2
-AnonFiles v2 is a secure and efficient file hosting service that allows users to upload and share files anonymously. Built with a Node.js backend using Express and a React frontend, this application ensures seamless file management, robust security measures, and a user-friendly interface.
+# AnonFiles v2
 
-Table of Contents
-Features
-Technologies Used
-Demo
-Getting Started
-Prerequisites
-Installation
-Environment Variables
-Running the Application
-Backend
-Frontend
-API Endpoints
-Project Structure
-Contributing
-License
-Contact
-Features
-Anonymous File Uploads: Users can upload files without the need for an account.
-Secure File Storage: Files are stored securely on the server with unique identifiers.
-File Validation: Only allowed file types are accepted, ensuring security and integrity.
-Rate Limiting: Prevents abuse by limiting the number of uploads per IP address.
-CORS Configuration: Allows requests from specified frontend origins.
-Error Handling: Comprehensive error handling for better reliability and user feedback.
-Scalable Architecture: Designed to handle large files (up to 1GB) efficiently.
-Technologies Used
-Backend
-Node.js - JavaScript runtime environment.
-Express - Web framework for Node.js.
-Multer - Middleware for handling multipart/form-data (file uploads).
-nanoid - For generating unique IDs.
-CORS - Middleware for enabling Cross-Origin Resource Sharing.
-dotenv - Loads environment variables from a .env file.
-express-rate-limit - Basic rate-limiting middleware for Express.
-Other Libraries: path, fs, child_process, etc.
-Frontend
-React - JavaScript library for building user interfaces.
-Other Libraries: (Assumed based on standard React setup)
-Development Tools
-Git - Version control system.
-GitHub - Repository hosting service.
-VS Code - Code editor (optional).
-Demo
-Provide screenshots or a link to a live demo if available.
+<div align="center">
+  <img src="path_to_logo.png" alt="AnonFiles v2 Logo" width="200"/>
+</div>
 
+<p align="center">
+  <strong>AnonFiles v2</strong> - Безпечний та ефективний сервіс хостингу файлів для анонімного завантаження та обміну файлами.
+</p>
 
-Getting Started
-Follow these instructions to set up the project locally.
+## 📋 Зміст
 
-Prerequisites
-Ensure you have the following installed on your system:
+- [Особливості](#особливості)
+- [Використані Технології](#використані-технології)
+- [Демо](#демо)
+- [Встановлення](#встановлення)
+  - [Передумови](#передумови)
+  - [Інсталяція](#інсталяція)
+  - [Змінні оточення](#змінні-оточення)
+- [Запуск Проекту](#запуск-проекту)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
+- [API Ендпоінти](#api-ендпоінти)
+- [Структура Проекту](#структура-проекту)
+- [Внесок](#внесок)
+- [Ліцензія](#ліцензія)
+- [Контакти](#контакти)
 
-Node.js (v14 or higher) - Download Here
-npm (comes with Node.js) or Yarn - Yarn Installation Guide
-Git - Download Here
-Installation
-Clone the Repository
+## ✨ Особливості
 
-bash
-Copy code
-git clone https://github.com/av1ast/anonfiles_v2.git
-Navigate to the Project Directory
+<ul>
+  <li>📂 <strong>Анонімні Завантаження:</strong> Завантажуйте файли без створення облікового запису.</li>
+  <li>🔒 <strong>Безпечне Зберігання:</strong> Файли зберігаються з унікальними ідентифікаторами.</li>
+  <li>✅ <strong>Валідація Файлів:</strong> Підтримуються лише дозволені типи файлів.</li>
+  <li>🚫 <strong>Обмеження Частоти:</strong> Захист від зловживань за допомогою обмеження кількості завантажень з однієї IP-адреси.</li>
+  <li>🌐 <strong>CORS Конфігурація:</strong> Дозволяє запити з визначених джерел.</li>
+  <li>🐞 <strong>Обробка Помилок:</strong> Комплексна обробка помилок для надійності та зручності користувача.</li>
+  <li>📈 <strong>Масштабована Архітектура:</strong> Оптимізована для обробки великих файлів до 1GB.</li>
+</ul>
 
-bash
-Copy code
-cd anonfiles_v2
-Install Backend Dependencies
+## 🛠️ Використані Технології
 
-bash
-Copy code
-cd backend
-npm install
-Install Frontend Dependencies
+### Backend
 
-bash
-Copy code
-cd ../frontend
-npm install
-Environment Variables
-Create a .env file in both the backend and frontend directories with the necessary environment variables.
+- **Node.js** - JavaScript runtime.
+- **Express** - Веб-фреймворк для Node.js.
+- **Multer** - Мідлвар для обробки `multipart/form-data` (завантаження файлів).
+- **nanoid** - Генерація унікальних ідентифікаторів.
+- **CORS** - Мідлвар для налаштування Cross-Origin Resource Sharing.
+- **dotenv** - Завантаження змінних оточення з `.env` файлу.
+- **express-rate-limit** - Мідлвар для обмеження частоти запитів.
+- **Інші бібліотеки:** `path`, `fs`, `child_process`, тощо.
 
-Backend .env
-Create a .env file inside the backend folder:
+### Frontend
 
-env
-Copy code
-PORT=5000
-FRONTEND_URL=http://localhost:3000
-BACKEND_URL=http://localhost:5000
-PORT: Port on which the backend server will run.
-FRONTEND_URL: The URL where the frontend is hosted.
-BACKEND_URL: The URL where the backend is accessible.
-Ensure that FRONTEND_URL matches the origin from which your frontend is making requests.
+- **React** - Бібліотека для побудови користувацьких інтерфейсів.
+- **Інші бібліотеки:** (припускається стандартний набір для React)
 
-Frontend .env
-Create a .env file inside the frontend folder:
+### Інструменти Розробки
 
-env
-Copy code
-REACT_APP_BACKEND_URL=http://localhost:5000
-REACT_APP_BACKEND_URL: The backend server URL used by the React application to make API requests.
-Note: In React, environment variables must start with REACT_APP_ to be accessible in the application.
+- **Git** - Система контролю версій.
+- **GitHub** - Платформа для хостингу репозиторіїв.
+- **VS Code** - Редактор коду (опціонально).
 
-Running the Application
-Backend
-Navigate to the Backend Directory
+## 🎥 Демо
 
-bash
-Copy code
-cd backend
-Start the Backend Server
+*Додайте посилання на живу демонстрацію або скріншоти.*
 
-bash
-Copy code
-npm start
-The server will start on the port specified in the .env file (default is 5000).
+<img src="path_to_upload_screenshot.png" alt="Скріншот Завантаження" width="600"/>
+<img src="path_to_download_screenshot.png" alt="Скріншот Завантаження Файлу" width="600"/>
 
-Frontend
-Navigate to the Frontend Directory
+## 🚀 Встановлення
 
-bash
-Copy code
-cd frontend
-Start the Frontend Application
+### 📋 Передумови
 
-bash
-Copy code
-npm start
-The React application will start on http://localhost:3000.
+Переконайтесь, що у вас встановлені наступні програми:
 
-Ensure that both the backend and frontend servers are running simultaneously for the application to function correctly.
+- **Node.js** (версія 14 або вище) - [Завантажити](https://nodejs.org/)
+- **npm** (встановлюється разом з Node.js) або **Yarn** - [Інструкція з встановлення Yarn](https://classic.yarnpkg.com/en/docs/install)
+- **Git** - [Завантажити](https://git-scm.com/downloads)
 
-API Endpoints
-1. Upload File
-Endpoint: /upload
-Method: POST
-Description: Uploads a single file to the server.
-Headers:
-Content-Type: multipart/form-data
-Body:
-file (form-data) - The file to be uploaded.
-Response:
-Success (200):
-json
-Copy code
-{
-  "link": "http://localhost:5000/file/<unique_id>"
-}
-Error (400/500):
-json
-Copy code
-{
-  "error": "Error message"
-}
-2. Download File
-Endpoint: /file/:id
-Method: GET
-Description: Downloads the file associated with the provided unique ID.
-Response:
-Success: Initiates file download.
-Error (404/500): Displays error message.
-Project Structure
-bash
-Copy code
-anonfiles_v2/
-├── backend/
-│   ├── uploads/           # Directory where uploaded files are stored
-│   ├── index.mjs         # Main backend application file
-│   ├── package.json
-│   └── .env
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   └── ...           # Other React components and files
-│   ├── package.json
-│   └── .env
-├── .gitignore
-├── README.md
-└── LICENSE
-Contributing
-Contributions are welcome! Follow these steps to contribute to the project:
+### 🛠️ Інсталяція
 
-Fork the Repository
+1. **Клонувати Репозиторій**
 
-Clone the Forked Repository
-
-bash
-Copy code
-git clone https://github.com/your-username/anonfiles_v2.git
-cd anonfiles_v2
-Create a New Branch
-
-bash
-Copy code
-git checkout -b feature/YourFeature
-Make Your Changes
-
-Commit Your Changes
-
-bash
-Copy code
-git commit -m "Add Your Feature"
-Push to the Branch
-
-bash
-Copy code
-git push origin feature/YourFeature
-Open a Pull Request
-
-Describe your changes and submit the pull request for review.
-
-Please ensure that your contributions adhere to the project guidelines and coding standards.
-
-License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the terms of the license.
-
-Contact
-For any questions, suggestions, or support, please contact:
-
-Name: Your Name
-Email: your_email@example.com
-GitHub: av1ast
-Feel free to reach out for collaborations or any inquiries related to the project.
+   ```bash
+   git clone https://github.com/av1ast/anonfiles_v2.git
